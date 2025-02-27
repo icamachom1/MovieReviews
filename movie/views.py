@@ -44,6 +44,7 @@ def statistics_view(request):
         count = movies_in_year.count()
         movie_counts_by_year[year] = count
 
+    plt.figure(figsize=(10, 5))  # Ajustar tamaño
     bar_width = 0.5 #Ancho de las barras
     bar_spacing = 0.5 #Separación entre las barras
     bar_positions = range(len(movie_counts_by_year)) #Posiciones de las barras
